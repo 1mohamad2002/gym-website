@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.header {
+    top: 0;
+    background-image: url('pics/background.png');
+     width: 100%;
+   height: 100vh;
+   background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 19px;
+}
+.left{
+  right: 90px;
+position: absolute;
+}
+
+.header h1 {
+    margin: 0;
+   
+}
+
+.list {
+    display: flex;
+    width: 100%;
+   
+    padding-top: 0px;
+    margin: 0;
+}
+
+.list ul {
+    list-style: none;
+    padding: 10px;
+    padding-top: 0;
+     
+}
+
+.list li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    display: inline-block; 
+    height: auto;
+    margin-top: 0;
+}
+
+.list li:last-child {
+    margin-right: 0;
+    
+}
+
+.list li ion-icon {
+    font-size: 24px;
+}
+
+.middlelist li {
+padding-top: 0;
+padding-left: 85px;
+padding-right: 10px;
+color: rgb(255, 255, 255);
+list-style: none;
+
+
+}
+.header .left {
+
+color: rgb(255, 255, 255);
+padding-left: 50px;
+}
+.left a{
+color: white;
+
+}
+.middlelist a{
+text-decoration: none;
+color: white;
+}
+.aboutus{
+   margin-top: 0 ;
+border-top: 0;
+height: 1000px;
+background-color: black;
+color: white;
+font-size: xx-large;
+height: auto;
+
+}
+.aboutus p{
+
+    line-height: 1.6; 
+
+}
+.title{
+    display: grid;
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    place-items: center;
+    
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  width: 1000px;
+  height: 200px;
+  aspect-ratio: 1/1;
+  /*
+    animations declared later in the cascade will override the
+    properties of previously declared animations
+  */
+  /* bounce 'overwrites' the transform set by rise, hence the sun only moves horizontally */
+  animation:
+    4s linear 0s infinite alternate rise,
+    4s linear 0s infinite alternate bounce;
+}
+@keyframes rise {
+    from {
+      transform: translateY(1100vh);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+@keyframes bounce {
+  from {
+    transform: translateX(-50vw);
+  }
+  to {
+    transform: translateX(50vw);
+  }
+}
+
+.contact_us{
+
+color: white;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+
+
+
+}
+.contact_us{
+
+background-color: aqua;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+
+}
+
+.contact-left{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+width: 45%;
+right: 0;
+position: absolute;
+height: 90vh;
+}
+.contact-left-title{
+font-weight: 600;
+
+color: white;
+font-size: 40px;
+margin-bottom: 5px ;
+
+}
+.contact-left-title hr{
+
+  border: none;
+  width: 220px;
+  height:  5px;
+  background-color: white;
+  border-radius :10px ;
+  margin-bottom: 30px;
+
+}
+.contact-input{
+width: 400px;
+height: 60px;
+border: none;
+padding-left: 25px;
+font-weight: 500;
+color: rgb(255, 255, 255);
+border-radius: 50px;
+}
+.contact-left textarea{
+
+
+height: 140px;
+
+padding-top: 15px;
+
+border-radius: 20px;
+
+
+}
+.contact-input:focus{
+
+border: 2px solid red;
+
+}
+.contact-inputs::placeholder{
+
+  color: white;
+}
+.contact-left button{
+
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: linear-gradient(270deg,blue,pink);;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,pink,blue);
+  cursor: pointer;
+}
+.contact-right{
+background-color: aqua;
+width: 50%;
+
+
+}
+.contact-right img{
+
+width: 100%;
+height: 90vh;
+
+
+
+}
+html{
+
+  scroll-behavior:smooth;
+}
+.m360tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as necessary */
+  text-align: center;
+  color: purple;
+  font-size: 100px
+}
+.m360tour .title1{
+
+margin-bottom: 80px;
+
+}

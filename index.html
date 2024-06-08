@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="myscript.js">
+      function downloadImage(imageUrl) {
+        var link = document.createElement('a');
+        link.href = imageUrl;
+        link.download = 'Schedule_Fall.jpg';
+        link.click();
+    }
+    
+    </script>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="list">
+        <h1>SUGAR GYM</h1>
+
+        <ul class="middlelist">
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#" onclick="downloadImage('pics/Schedule_Fall.jpg')">Schedule</a></li>
+          <li><a href="#contact_us">Contact us </a></li>
+          
+        </ul>
+
+        <ul class="left">
+          <li>
+            <a href="https://www.example.com"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.example.com"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.example.com"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <div class="aboutus" id="aboutus">
+      <p>
+        Welcome to Sugar Gym, where your fitness journey begins and excellence
+        thrives. Nestled in the heart of our community, Sugar Gym is more than
+        just a fitness center – it's a sanctuary for those passionate about
+        health, wellness, and self-improvement. As you step into our expansive
+        facility, you'll be greeted by a world of possibilities. Our
+        state-of-the-art equipment, meticulously curated workout spaces, and
+        innovative amenities set the stage for transformative experiences. We
+        take pride in offering the latest in fitness technology and trends,
+        ensuring that every visit to Sugar Gym is an opportunity to push
+        boundaries and achieve greatness. Whether you're striving to build
+        muscle, burn calories, or simply enhance your overall well-being, our
+        team of experienced trainers and instructors are here to guide and
+        support you every step of the way. Our vibrant community of like-minded
+        individuals fosters camaraderie, motivation, and accountability, making
+        every workout an energizing and inspiring experience. From dynamic group
+        classes to personalized training sessions, we provide the tools,
+        resources, and expertise needed to unlock your full potential. Join us
+        at Sugar Gym and embark on a journey of self-discovery, empowerment, and
+        transformation. Together, let's redefine what's possible and elevate
+        fitness to new heights.
+      </p>
+    </div>
+
+    <br /><br />
+    <div class="pics">
+      <h2 class="title">our gym</h2>
+      <br />
+
+      <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
+        <div>
+          <img src="pics/Gym-1-1.jpg" alt="" loading="lazy" />
+        </div>
+
+        <div class="col-start-3">
+          <img src="pics/DSC05170.jpg" alt="" loading="lazy" />
+        </div>
+        <div>
+          <img src="pics/images22.jpeg" alt="" loading="lazy" />
+        </div>
+        <div>
+          <img src="pics/gym-10-1024x683.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="row-start-1 col-start-2 col-span-2">
+          <img src="pics/bikes.png" alt="" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="m360tour">
+      
+      <h2 class="title1">Location  </h2>
+ 
+      <iframe  class="iframe1"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4856.346604942099!2d13.314518193579099!3d52.5122027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8511cdabfffff%3A0xde98346e99ea7f09!2sTU%20Berlin%20Gym!5e0!3m2!1sen!2slb!4v1717514998846!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+    </div>
+ 
+ 
+
+
+
+
+    <div clas="contact_us" id="contact_us">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr />
+        </div>
+        <input type="hidden" name="access_key" value="60958c3d-1c94-436a-a55b-4af5b442f957">
+        <input
+          type="text"
+          name="name"
+          placeholder=" your FULL  name "
+          class="contact-input"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder=" your email"
+          class="contact-input"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder=" your message"
+          class="contact-input"
+          required
+        >
+        </textarea>
+
+        <button type="submit">submit</button>
+      </form>
+      <div class="contact-right">
+        <img src="pics/730c57e110ee50154c943c7aefd7f570.jpg" alt="" srcset="" />
+      </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
